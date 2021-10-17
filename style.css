@@ -1,0 +1,114 @@
+#parent {
+  float: none;
+  margin: 0 10%;
+}
+#div1 {
+  width: 46%;
+  height: 650px;
+  float: left;
+  background-color: #eeeeee;
+  padding: 0 2%;
+}
+
+#div2 {
+  /* display: inline-block; */
+  width: 46%;
+  height: 650px;
+  float: right;
+  background-color: #ffffff;
+  padding: 0 2%;
+}
+
+/* Input Box by which task is to be entered */
+input {
+  width: 95%;
+  border: none;
+  color: grey;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 2%;
+  outline: none;
+}
+
+.error {
+  font-size: 20px;
+  color: red;
+  font-style: italic;
+  margin: 10px 0;
+  font-weight: bolder;
+}
+hr {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 99%;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 480px;
+  margin: 0;
+  padding: 0;
+}
+li {
+  marker: none;
+  padding: 0;
+  margin: 0;
+}
+.check {
+  float: right;
+  /* right: 80px; */
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  -webkit-appearance: none;
+  border: 2px solid black;
+  position: relative;
+  outline: 0;
+}
+
+.dltButton {
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  -webkit-appearance: none;
+  border: 2px solid black;
+  position: relative;
+  outline: 0;
+}
+
+label {
+  margin: 0 auto;
+  margin-left: 5px;
+  vertical-align: middle;
+  height: 100%;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.check:checked:after {
+  content: "\2714";
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  left: 7px;
+  color: rgb(16, 45, 211);
+}
+ul li input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: black;
+}
+.edtbtn {
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin: 5px; 
+  -webkit-appearance: none;
+  border: 2px solid  black;
+  position: relative;
+  outline: 0;
+}
